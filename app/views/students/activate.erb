@@ -1,2 +1,4 @@
 <% @student.active = !@student.active %>
 <% @student.save %>
+
+<p>Student has been changed from <%= !@student.active ? 'active' : 'inactive' %> to <%= @student.active ? 'active' : 'inactive' %>.</p>
